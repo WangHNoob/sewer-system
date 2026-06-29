@@ -37,8 +37,10 @@
 # 后端 (uv 自动创建虚拟环境并安装)
 uv sync
 
-# 可选：微调依赖
-uv sync --extra finetune
+# 可选：微调依赖（unsloth 和 vllm 互斥，选其一）
+uv sync --extra unsloth
+# 或
+uv sync --extra vllm
 
 # 前端
 cd frontend
