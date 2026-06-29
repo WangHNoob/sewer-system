@@ -1,0 +1,149 @@
+{
+  "standard": "CJJ 181-2012",
+  "title": "城镇排水管道检测与评估技术规程",
+  "version": "1.0",
+  "defects": [
+    {
+      "code": "PL",
+      "name": "破裂",
+      "type": "structural",
+      "description": "管道内壁上可见的裂缝、破碎或断裂",
+      "grades": [
+        {"level": 1, "criteria": "裂痕：当下列情形之一：1）裂痕宽度<2mm；2）裂痕长度<管段长度的1/4", "repair": "定期观察"},
+        {"level": 2, "criteria": "裂口：当下列情形之一：1）裂口宽度2~5mm；2）裂口长度≥管段长度的1/4", "repair": "局部修复"},
+        {"level": 3, "criteria": "破碎：当下列情形之一：1）裂口宽度5~10mm；2）裂口长度≥管段长度的1/2", "repair": "整体修复"},
+        {"level": 4, "criteria": "坍塌：当下列情形之一：1）裂口宽度>10mm；2）管道结构性坍塌", "repair": "紧急修复或更换"}
+      ]
+    },
+    {
+      "code": "CK",
+      "name": "错口",
+      "type": "structural",
+      "description": "管道接口处出现的错位、偏移",
+      "grades": [
+        {"level": 1, "criteria": "错口量<管壁厚度的1/2", "repair": "定期观察"},
+        {"level": 2, "criteria": "错口量为管壁厚度的1/2~1倍", "repair": "局部修复"},
+        {"level": 3, "criteria": "错口量为管壁厚度的1~2倍", "repair": "整体修复"},
+        {"level": 4, "criteria": "错口量>管壁厚度的2倍", "repair": "紧急修复或更换"}
+      ]
+    },
+    {
+      "code": "SG",
+      "name": "树根",
+      "type": "functional",
+      "description": "树根侵入管道内部",
+      "grades": [
+        {"level": 1, "criteria": "树根侵入量<管道截面积的10%", "repair": "定期观察"},
+        {"level": 2, "criteria": "树根侵入量为管道截面积的10%~25%", "repair": "清理树根"},
+        {"level": 3, "criteria": "树根侵入量为管道截面积的25%~50%", "repair": "清理树根并局部修复"},
+        {"level": 4, "criteria": "树根侵入量>管道截面积的50%", "repair": "清理树根并整体修复"}
+      ]
+    },
+    {
+      "code": "SL",
+      "name": "渗漏",
+      "type": "structural",
+      "description": "管道接口或管壁处出现的渗水、漏水现象",
+      "grades": [
+        {"level": 1, "criteria": "渗漏：管壁可见水渍，无明显水流", "repair": "定期观察"},
+        {"level": 2, "criteria": "滴漏：有明显水滴但未形成连续水流", "repair": "局部修复"},
+        {"level": 3, "criteria": "线漏：形成连续线状水流", "repair": "整体修复"},
+        {"level": 4, "criteria": "涌漏：大量涌水或喷射状漏水", "repair": "紧急修复"}
+      ]
+    },
+    {
+      "code": "TL",
+      "name": "接口材料脱落",
+      "type": "structural",
+      "description": "管道接口处的密封材料脱落、缺失",
+      "grades": [
+        {"level": 1, "criteria": "接口材料脱落<接口周长的1/4", "repair": "定期观察"},
+        {"level": 2, "criteria": "接口材料脱落为接口周长的1/4~1/2", "repair": "局部修复"},
+        {"level": 3, "criteria": "接口材料脱落为接口周长的1/2~3/4", "repair": "整体修复"},
+        {"level": 4, "criteria": "接口材料脱落>接口周长的3/4", "repair": "紧急修复"}
+      ]
+    },
+    {
+      "code": "ZW",
+      "name": "障碍物",
+      "type": "functional",
+      "description": "管道内部存在的阻碍水流的物体",
+      "grades": [
+        {"level": 1, "criteria": "障碍物占管道截面积<15%", "repair": "定期观察"},
+        {"level": 2, "criteria": "障碍物占管道截面积15%~25%", "repair": "清理障碍物"},
+        {"level": 3, "criteria": "障碍物占管道截面积25%~50%", "repair": "清理障碍物并检查管壁"},
+        {"level": 4, "criteria": "障碍物占管道截面积>50%", "repair": "紧急清理"}
+      ]
+    },
+    {
+      "code": "BX",
+      "name": "变形",
+      "type": "structural",
+      "description": "管道截面发生变形",
+      "grades": []
+    },
+    {
+      "code": "FS",
+      "name": "腐蚀",
+      "type": "structural",
+      "description": "管道内壁腐蚀",
+      "grades": []
+    },
+    {
+      "code": "QF",
+      "name": "起伏",
+      "type": "structural",
+      "description": "管道纵向起伏",
+      "grades": []
+    },
+    {
+      "code": "TJ",
+      "name": "脱节",
+      "type": "structural",
+      "description": "管道接口脱节",
+      "grades": []
+    },
+    {
+      "code": "AJ",
+      "name": "暗接",
+      "type": "structural",
+      "description": "管道暗接",
+      "grades": []
+    },
+    {
+      "code": "CR",
+      "name": "穿入",
+      "type": "functional",
+      "description": "其他管线穿入",
+      "grades": []
+    },
+    {
+      "code": "CJ",
+      "name": "沉积",
+      "type": "functional",
+      "description": "管道底部沉积物",
+      "grades": []
+    },
+    {
+      "code": "JG",
+      "name": "结垢",
+      "type": "functional",
+      "description": "管道内壁结垢",
+      "grades": []
+    },
+    {
+      "code": "CQ",
+      "name": "残墙",
+      "type": "functional",
+      "description": "管道内残留墙体",
+      "grades": []
+    },
+    {
+      "code": "FZ",
+      "name": "浮渣",
+      "type": "functional",
+      "description": "管道内浮渣",
+      "grades": []
+    }
+  ]
+}
