@@ -12,6 +12,9 @@ build/
 venv/
 env/
 
+# uv
+uv.lock
+
 # Node
 node_modules/
 .next/

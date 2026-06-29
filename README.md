@@ -14,11 +14,12 @@
 
 | 层级 | 技术 |
 |------|------|
-| 前端 | React + Next.js 14 + Tailwind CSS |
+| 前端 | React + Next.js 16 + Tailwind CSS 4 |
 | 后端 | FastAPI (Python) |
+| 包管理 | uv |
 | 智能体 | LangGraph (ReAct 推理) |
 | 检测模型 | YOLOv11n (Ultralytics) |
-| LLM 接入 | LiteLLM 统一适配层 (OpenAI 兼容) |
+| LLM 接入 | OpenAI 兼容 API 统一适配层 |
 | 报告生成 | python-docx |
 
 ## 快速开始
@@ -28,12 +29,16 @@
 - Python 3.10+
 - Node.js 18+
 - CUDA 12.1+ (本地 GPU 模式)
+- [uv](https://docs.astral.sh/uv/) (Python 包管理)
 
 ### 安装依赖
 
 ```bash
-# 后端
-pip install -r requirements.txt
+# 后端 (uv 自动创建虚拟环境并安装)
+uv sync
+
+# 可选：微调依赖
+uv sync --extra finetune
 
 # 前端
 cd frontend
@@ -44,8 +49,7 @@ npm install
 
 ```bash
 # 启动后端 (端口 8080)
-cd backend
-uvicorn main:app --host 0.0.0.0 --port 8080 --reload
+uv run uvicorn backend.main:app --host 0.0.0.0 --port 8080 --reload
 
 # 启动前端 (端口 3000)
 cd frontend
