@@ -1,4 +1,5 @@
-from langgraph.graph import StateGraph, END
+from langgraph.graph import StateGraph
+from langgraph.constants import END
 from langchain_core.messages import (
     SystemMessage,
     HumanMessage,

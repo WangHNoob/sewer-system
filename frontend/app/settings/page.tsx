@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 interface LLMPreset {
   name: string;
@@ -17,12 +17,12 @@ export default function SettingsPage() {
   const [maxTokens, setMaxTokens] = useState(4096);
   const [status, setStatus] = useState("");
 
-  useState(() => {
+  useEffect(() => {
     fetch("http://localhost:8080/api/config/llm/presets")
       .then((r) => r.json())
       .then(setPresets)
       .catch(console.error);
-  });
+  }, []);
 
   const handleSave = async () => {
     const preset = presets.find((p) => p.model_name === selectedPreset);
